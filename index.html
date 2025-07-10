@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <title>tic-tac-toe</title>
+</head>
+<body>
+   <div id="gridContainer" style="font-family: Roboto; font-weight: 700;">    
+   </div>
+
+    <dialog id="dialog">
+        <form method="dialog">
+            <p class="dialogFlex">
+                <label>
+                    X's name:
+                    <input id="playerXName" type="text" required />
+                </label>
+                <br>
+                <label>
+                    O's name:
+                    <input id="playerOName" type="text" required />
+                </label>
+            </p>
+            <div class="dialogFlex">
+                <button id="confirmBtn" value="default">OK</button>
+            </div>
+        </form>
+    </dialog>
+    <dialog id="dialogDone">
+        <p id="win" class="dialogFlex"></p>
+        <p id="players" class="dialogFlex"></p>
+        <div class=dialogFlex>
+            <button id="confirmBtnDone" value="default">OK</button>
+        </div>
+    </dialog>
+
+    <script src="./script.js"></script>
+</body>
+</html>
